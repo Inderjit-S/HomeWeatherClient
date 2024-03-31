@@ -20,10 +20,10 @@
 //     expect(app).toBeTruthy();
 //   });
 
-//   it(`should have the 'WeatherClient' title`, () => {
+//   it(`should have the 'MusicClient' title`, () => {
 //     const fixture = TestBed.createComponent(AppComponent);
 //     const app = fixture.componentInstance;
-//     expect(app.title).toEqual('WeatherClient');
+//     expect(app.title).toEqual('MusicClient');
 //   });
 
 //   it('should render title', () => {

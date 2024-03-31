@@ -10,7 +10,7 @@
 //   styleUrl: './app.component.css'
 // })
 // export class AppComponent {
-//   title = 'WeatherClient';
+//   title = 'MusicClient';
 // }
 
 // import { HttpClient } from '@angular/common/http';
@@ -79,5 +79,5 @@ import { NavMenuComponent } from "./nav-menu/nav-menu.component";
   imports: [RouterOutlet, HttpClientModule, NavMenuComponent]
 })
 export class AppComponent {
-  title = 'WeatherClient';
+  title = 'MusicClient';
 }
