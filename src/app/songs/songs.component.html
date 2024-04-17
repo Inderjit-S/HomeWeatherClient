@@ -1,0 +1,23 @@
+<h1>
+    Songs
+</h1>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Genre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (Song of songs; track $index) {
+            <tr>
+                <td>{{Song.id}}</td>
+                <td>{{Song.title}}</td>
+                <td>{{Song.artist}}</td>
+                <td>{{Song.genre}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
