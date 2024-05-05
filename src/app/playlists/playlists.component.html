@@ -1,0 +1,24 @@
+<h1>
+    Playlists
+</h1>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Creator</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (Playlist of playlists; track $index) {
+            <tr>
+                <td>
+                    <a [routerLink] = "['/playlistSongs', Playlist.id]">{{Playlist.id}}</a>
+                </td>
+                <!-- <td>{{Playlist.id}}</td> -->
+                <td>{{Playlist.name}}</td>
+                <td>{{Playlist.creator}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
