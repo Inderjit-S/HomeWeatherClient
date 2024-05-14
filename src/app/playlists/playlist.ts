@@ -1,5 +1,5 @@
 export interface Playlist {
-    id: number;
+    playlistId: number;
     name: string;
     creator: string;
 }

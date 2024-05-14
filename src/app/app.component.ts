@@ -69,15 +69,22 @@
 
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+//import { HttpClientModule } from '@angular/common/http';
 import { NavMenuComponent } from "./nav-menu/nav-menu.component";
+import { AuthService } from './auth/auth.service';
+import { HomeComponent } from './home/home.component';
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, HttpClientModule, NavMenuComponent]
+  imports: [RouterOutlet, HomeComponent,NavMenuComponent]
 })
 export class AppComponent {
   title = 'MusicClient';
+
+  // constructor(private authService: AuthService){}
+  // ngOnInit(): void{
+  //   this.authService.init();
+  // }
 }

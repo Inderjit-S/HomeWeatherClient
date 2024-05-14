@@ -13,7 +13,7 @@
         @for (Playlist of playlists; track $index) {
             <tr>
                 <td>
-                    <a [routerLink] = "['/playlistSongs', Playlist.id]">{{Playlist.id}}</a>
+                    <a [routerLink] = "['/playlistSongs', Playlist.playlistId]">{{Playlist.playlistId}}</a>
                 </td>
                 <!-- <td>{{Playlist.id}}</td> -->
                 <td>{{Playlist.name}}</td>
