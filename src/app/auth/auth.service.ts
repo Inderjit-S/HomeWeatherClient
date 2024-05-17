@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { LoginRequest } from './login-request';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { LoginResult } from './login-result';
-import { environment } from '../../environments/environment.development';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -28,7 +28,10 @@ private setAuthStatus(isAuthenticated: boolean): void {
 isAuthenticated(): boolean {
   return this.getToken() !== null;
 }
-baseUrl = "https://localhost:40443/";
+//baseUrl = "https://localhost:40443/";
+//baseUrl = "http://localhost:40080/";
+baseUrl = "http://ec2-3-101-36-35.us-west-1.compute.amazonaws.com/";
+
   constructor(protected http: HttpClient) { }
 
   login(item: LoginRequest): Observable<LoginResult>{

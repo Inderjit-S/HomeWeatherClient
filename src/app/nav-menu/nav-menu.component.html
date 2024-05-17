@@ -1,5 +1,5 @@
 <header>
-  <mat-toolbar color="primary">
+  <mat-toolbar color="primary" style="background-color: #000000;">
     <button mat-icon-button [routerLink]="['/']">
       <mat-icon>
         home
@@ -8,17 +8,18 @@
     <!-- <a mat-flat-button color="primary" [routerLink]="['/fetch-data']">
       Fetch Data
     </a> -->
-    <a mat-flat-button color="primary" [routerLink]="['/songs']">
+    <a mat-flat-button color="primary" style="background-color: #109922;" [routerLink]="['/songs']">
       Songs
     </a>
-    <a mat-flat-button color="primary" [routerLink]="['/playlists']">
+    <a mat-flat-button color="primary" style="background-color: #109922;" [routerLink]="['/playlists']">
       Playlists
     </a>
+    <span class="separator"></span>
     @if (isLoggedIn){
-      <a mat-flat-button color="primary" (click) = "onLogout()">Logout</a>
+      <a mat-flat-button color="primary" style="background-color: #109922;" (click) = "onLogout()">Logout</a>
     }
     @else{
-      <a mat-flat-button color="primary" [routerLink]="['/login']">Login</a>
+      <a mat-flat-button color="primary" style="background-color: #109922;" [routerLink]="['/login']">Login</a>
     }
     <!-- <a mat-flat-button color="primary" [routerLink]="['/login']">Login</a> -->
   </mat-toolbar>

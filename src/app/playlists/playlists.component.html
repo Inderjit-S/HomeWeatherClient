@@ -1,6 +1,7 @@
 <h1>
     Playlists
 </h1>
+<p>Click the Id to get a list of songs in the playlist</p>
 <table class = "table table-striped">
     <thead>
         <tr>
@@ -15,7 +16,6 @@
                 <td>
                     <a [routerLink] = "['/playlistSongs', Playlist.playlistId]">{{Playlist.playlistId}}</a>
                 </td>
-                <!-- <td>{{Playlist.id}}</td> -->
                 <td>{{Playlist.name}}</td>
                 <td>{{Playlist.creator}}</td>
             </tr>

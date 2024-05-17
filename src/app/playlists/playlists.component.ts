@@ -17,7 +17,9 @@ import { RouterLink } from '@angular/router';
 export class PlaylistsComponent implements OnInit {
   public playlists: Playlist[] = [];
 
-  baseUrl = "https://localhost:40443/";
+  //baseUrl = "https://localhost:40443/";
+  //baseUrl = "http://localhost:40080/";
+  baseUrl = "http://ec2-3-101-36-35.us-west-1.compute.amazonaws.com/";
 
   constructor(private http: HttpClient) {}
 

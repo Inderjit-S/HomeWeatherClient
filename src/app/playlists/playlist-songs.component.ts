@@ -19,7 +19,9 @@ export class PlaylistSongsComponent {
   public songs: Song[] = [];
   public displayedColumns : string[] = ["id", "title", "artist","genre"];
   id: number;
-  baseUrl = "https://localhost:40443/";
+  //baseUrl = "https://localhost:40443/";
+  //baseUrl = "http://localhost:40080/";
+  baseUrl = "http://ec2-3-101-36-35.us-west-1.compute.amazonaws.com/";
   constructor(private http: HttpClient, private activatedRoute: ActivatedRoute) {this.id = -1}
 
   ngOnInit() {
